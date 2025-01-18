@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+}
+
+.container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(assets/images/bg-img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+
+}
+
+nav {
+    display: flex;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    width: 80vw;
+    margin: auto;
+}
+
+#logo {
+    width: 150px;
+    color: rgb(229, 9, 20);
+}
+
+.buttons {
+    padding: 5px;
+}
+
+.buttons button {
+    border: none;
+    background-color: red;
+    color: white;
+    padding: 12px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+/* -----------content------------ */
+
+.content {
+    height: 70vh;
+    margin-top: 10vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    /* font-size: 3vw; */
+    font-size: 40px;
+    font-weight: 800;
+}
+
+p {
+    /* font-size: 1.5vw; */
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 10px;
+
+}
+
+.section {
+    margin-top: 12px;
+}
+
+.emailSection {
+    margin-top: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* -----margin for faw section------- */
+    /* margin-bottom: 70px; */
+}
+
+.emailSection input {
+    padding: 16px;
+    font-size: 20px;
+    border-radius: 5px;
+    width: 25vw;
+    border: 1px solid white;
+    color: white;
+    background-color: rgb(33, 32, 32);
+}
+
+.emailSection button {
+    padding: 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 12px;
+    color: white;
+    background-color: red;
+}
+
+.division {
+    height: 5px;
+    background-color: gray;
+}
+
+/* ---------------media queries fr container-------------- */
+
+@media (max-width:600px) {
+    #logo {
+        width: 90px;
+    }
+
+    .buttons button {
+        padding: 5px;
+        margin-left: 5px;
+    }
+
+    .content {
+        padding: 0 18px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 17px;
+    }
+
+    .emailSection input {
+        padding: 10px;
+        font-size: 17px;
+    }
+
+    .emailSection button {
+        padding: 10px;
+    }
+}
+
+/* -------------end media queries------------ */
+
+/* --------------------tvsection------------------------- */
+
+.tvSection {
+    height: 80vh;
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tvSection h1 {
+    /* font-size: 3vw; */
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.tvSection p {
+    /* font-size: 1.5vw; */
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+#tvimg {
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+.img-div {
+    position: relative;
+    z-index: 10;
+    /* flex-basis: 50%; */
+    /* width: 100%; */
+}
+
+.vid-div {
+    position: absolute;
+    top: 76px;
+    left: 65px;
+    width: 73%;
+}
+
+#vid {
+    width: 100%;
+}
+
+/* ---------------media queries fr tvSection-------------- */
+@media (max-width:600px) {
+    .tvSection {
+        height: 100vh;
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .tvSection h1 {
+        font-size: 30px;
+    }
+
+    .tvSection p {
+        font-size: 17px;
+    }
+
+    .vid-div {
+        position: absolute;
+        top: 39px;
+        left: 33px;
+    }
+}
+
+/* -------------end media queries------------ */
+
+
+/* -----------------------mob-section------------------------ */
+
+
+.mob-section {
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.mob-div {
+    /* border: 2px solid red; */
+    flex-basis: 50%;
+    text-align: center;
+    position: relative;
+    /* width: 500px; */
+}
+
+#mobimg {
+    width: 70%;
+}
+
+.mob-text {
+    /* border: 2px solid red; */
+    /* width: 500px; */
+    padding: 30px;
+    flex-basis: 50%;
+
+}
+
+/* ---------------media queries fr mob-section-------------- */
+@media (max-width:600px) {
+    .mob-section {
+        margin-top: 80px;
+        flex-wrap: wrap-reverse;
+    }
+
+    .mob-div {
+        flex-basis: 100%;
+    }
+
+    .mob-text {
+        flex-basis: 100%;
+        text-align: center;
+    }
+}
+
+/* -------------end media queries------------ */
+
+/* -------------tv2 section---------------------- */
+
+#tvimg2 {
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+#vid2 {
+    width: 22vw;
+    /* border: 2px solid red; */
+}
+
+.vid-div2 {
+    position: absolute;
+    top: 35px;
+    left: 102px;
+}
+
+@media (max-width:600px) {
+    #vid2 {
+        width: 45vw;
+        /* border: 2px solid red; */
+    }
+    .vid-div2 {
+        position: absolute;
+        top: 22px;
+        left: 60px;
+    }
+}
+
+/* -------------end media queries------------ */
+
+
+/* ---------------------------kidsection---------------- */
+#kidimg{
+    width: 70%;
+}
+
+/* ---------------------FAQ--------------------------- */
+.faq-h1{
+    text-align: center;
+    margin: 30px;
+}
+.questions{
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+
+}
+.question{
+    background-color: rgb(51, 50, 50);
+    padding: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.email-p{
+    text-align: center;
+    margin-top:50px;
+}
+.mailsection{
+    margin-bottom: 70px;
+}
+@media (max-width:600px) {
+    .email-p{
+        padding: 20px;
+    }
+    
+}
+
+/* ---------------------FOOTER---------------------- */
+.footer{
+    height: 40vh;
+    width: 80vw;
+    margin:50px auto;
+}
+.footer p{
+    color: rgb(194, 194, 194);
+}
+text{
+    font-size: 16px;
+
+}
+.footer-grid{
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns:repeat(4,1fr) ;
+}
+.footer-grid p{
+    font-size: 13px;
+}
+.faq-but{
+    margin-top: 40px;
+    width: 9vw;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 12px;
+}
+.lst{
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+
+/* -------------------media queries for FAQ------------------ */
+@media (max-width:600px) {
+    .footer-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .faq-but{
+        width: 20vw;
+    }
+    
+}
